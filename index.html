@@ -6,7 +6,6 @@
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="./videoplayer.js"></script>
     <script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./maincss.css">
 </head>
 <body>
@@ -18,14 +17,12 @@
         <nav>
           <h2>BaekHyun<span> 边伯贤</span></h2>
           <div id="navLinks">
-            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <a href="#">首页</a>
             <a href="#introduction">简介</a>
             <a href="#member">团队出道</a>
             <a href="#solo">SOLO出道</a> 
             <a href="#end">尾页</a>
           </div>
-          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
           <h1>EXO成员&nbsp;<span class="pulser">&</span>&nbsp;SOLO歌手</h1>
@@ -139,25 +136,12 @@
         </div>
         <br><br><br>
         <a href="" class="hero-btn">BACK</a>
-      </section>
-    
-    
-      <script>
-        var navLinks = document.getElementById('navLinks');
-           
-        function showMenu() {
-          navLinks.style.right = '0';
-          navLinks.addEventListener('click',function(){
-            hideMenu();
-          })
-          
-        }
-        function hideMenu() {
-          navLinks.style.right = '-30%';
-        }
 
-       
-      </script>
+        <div class="foot">
+        <a href="report.html" title="点击查看">·我的结业报告·</a>
+        </div>
+         
+      </section>
     
     </body>
 </html>                    
