@@ -3,10 +3,86 @@
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>页面标题</title>
+  <title>报告</title>
+  <style>
+    h1{
+        text-align: center;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    div{
+        margin-left: 18%;
+    }
+    p{
+        margin-left: 5%;
+    }
+  </style>
 </head>
 <body>
-  <h1>我的第一个Web页</h1>
-  <p>当前有点丑 :) </p>
+  <h1>《Web应用基础》课程结业报告</h1>
+  <div>
+  <h2>一、网页内容</h2>
+  <p>
+    -选择男爱豆“边伯贤”作为此次Web项目的主题。项目分为五个模块，分别是首页、简介、团队出道、SOLO出道和尾页。<br>
+    -每个模块section的基本框架相似：标题h1+内容p+一个或多个div块。<br>
+    -首页主要是封面内容。<br>
+    -简介页面包括他的基本信息、早年经历、演艺经历和主要作品。<br>
+    -团队出道页面是内嵌了b站网页的EXO出道视频。<br>
+    -SOLO出道页面是他的三次SOLO出道内容，包括每一次的专辑封面、视频和歌曲音频。<br>
+    -尾页就是一个展示结束页面。在底部包含结业报告的访问。
+  </p>
+  </div>
+  <div>
+  <h2>二、开发过程</h2>
+  <p>
+    先确定项目分为五个section，然后决定每个section要显示的内容。<br>
+    构思每个section的框架，根据构思着手。<br>
+    做好页面大框架后，再添加一些页面美化、完善页面。
+  </p>
+  </div>
+  <div>
+  <h2>三、遇到的问题</h2>
+  <p>
+    1.首页的导航栏位置不正确<br>
+    2.网页的右边多出来一截空白部分<br>
+    3.盒子模型中的盒子无法间隔放置<br>
+    4.视频太大无法托管<br>
+    5.内嵌的网站视频自动播放<br>
+    6.solo出道页面，专辑mv和歌曲列表无法显示在同一行<br>
+    7.视频操作栏一直存在<br>
+    8.视频暂停播放后不显示视频封面<br>
+    9.无法在当前页面播放音频<br>
+    10.鼠标悬停事件移开后效果立刻消失而不是缓慢消失
+  </p>
+  </div>
+  <div>
+  <h2>四、如何解决</h2>
+  <p>
+    （对应上面问题的编号）<br>
+    1.2.将导航栏盒子的width改为90%<br>
+    3.在对应style中加上“justify-content: space-between;”<br>
+    4.更改上传视频的画质或者内嵌网站<br>
+    5.在网站src末尾加上“&autoplay=0”<br>
+    6.在对应style中加上“display:flex”<br>
+    7.在css中加入“video::-webkit-media-controls-enclosure{ display: none;}”<br>
+    10.将“-webkit-transition: 0.5s; transition: 0.5s;”从“a:hover”中放到“a”<br>
+  </p>
+  </div>
+  <div>
+  <h2>五、哪些未解决</h2>
+  <p>
+    8.视频暂停播放后不显示视频封面<br>
+    9.无法在当前页面播放音频
+  </p>
+  </div>
+  <div>
+  <h2>六、总结</h2>
+  <p>
+    虽然能够做出一个基本的Web网页，但是对html和css语言不够熟悉，需要查找搜索相关语言才能实现想要的样式。<br>
+    对于Javascript语言，了解的很浅，在开发过程中用的也比较少。<br>
+    希望在之后的学习中可以学会如何解决这次开发没有解决的问题。
+  </p>
+  </div>
 </body>
 </html>
